@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.user.OrderUerFragment">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myOrderVPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/myOrderTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fadeScrollbars="false"
+            android:layoutDirection="rtl"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            app:tabBackground="@drawable/tab_selection"
+            app:tabSelectedTextColor="@color/colorGreyLighten5">
+
+        </android.support.design.widget.TabLayout>
+    </android.support.v4.view.ViewPager>
+
+
+</FrameLayout>

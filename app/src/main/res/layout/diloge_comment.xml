@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dimension5"
+    android:orientation="vertical"
+    android:padding="@dimen/dimension5">
+
+    <RatingBar
+        android:id="@+id/dilogeCommentRatingBar"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimension3"
+        android:numStars="5"
+        android:stepSize="1"
+        android:theme="@style/RatingBar" />
+
+    <EditText
+        android:id="@+id/dilogeCommentETComment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:layout_marginTop="@dimen/dimension5"
+        android:background="@drawable/rounded_corner_white"
+        android:gravity="top"
+        android:hint="@string/addCommenthere"
+        android:padding="@dimen/dimension3" />
+
+    <Button
+        android:id="@+id/dilogeCommentBtnAdd"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimension5"
+        android:background="@color/orange"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.user.LoginUser">
+
+    <TextView
+        android:id="@+id/loginUserTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimension14"
+        android:drawableEnd="@drawable/ic_person_logo"
+        android:gravity="center"
+        android:padding="@dimen/dimension3"
+        android:text="@string/pleaseLogin"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/loginUserEditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/loginUserTextView"
+        android:layout_marginStart="@dimen/dimension5"
+        android:layout_marginTop="@dimen/dimension14"
+        android:layout_marginEnd="@dimen/dimension5"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/dimension5"
+        android:textDirection="rtl" />
+
+    <EditText
+        android:id="@+id/loginUserEditPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/loginUserEditEmail"
+        android:layout_marginStart="@dimen/dimension5"
+        android:layout_marginTop="@dimen/dimension14"
+        android:layout_marginEnd="@dimen/dimension5"
+        android:background="@drawable/rounded_corner_white"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="@dimen/dimension5"
+        android:textAlignment="viewEnd"
+        android:textDirection="rtl" />
+
+    <Button
+        android:id="@+id/loginUserBtnEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginUserEditPassword"
+        android:layout_margin="@dimen/dimension10"
+        android:layout_marginTop="@dimen/dimension12"
+        android:background="@drawable/round_corner_green"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/loginUserTextForgetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginUserBtnEnter"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dimension2"
+        android:text="@string/forgetPassword"
+        android:textColor="@color/colorBlueLighten"
+        android:textStyle="bold|italic|normal" />
+
+    <Button
+        android:id="@+id/loginUserBtnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginUserTextForgetPass"
+        android:layout_margin="@dimen/dimension10"
+        android:layout_marginTop="@dimen/dimension12"
+        android:background="@drawable/round_corner_yellow"
+        android:text="@string/register"
+        android:textColor="@color/colorBlueDark"
+        android:textStyle="bold|italic" />
+
+
+</RelativeLayout>

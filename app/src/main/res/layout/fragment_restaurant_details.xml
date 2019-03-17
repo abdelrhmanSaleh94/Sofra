@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.restaurant.RestaurantDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/restaurantCardDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimension5"
+        android:background="@drawable/background_textview_round"
+        android:layoutDirection="rtl">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/restaurantCardDetailsImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimension3"
+                android:background="@color/grayE"
+                android:paddingEnd="@dimen/dimension7"
+                app:srcCompat="@drawable/image_loader" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/restaurantCardDetailsTvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension3"
+                android:text="@string/restaurantName"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/restaurantCardDetailsTvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension3"
+                android:text="@string/category"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <RatingBar
+                android:id="@+id/restaurantCardDetailsRatingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension3"
+                android:numStars="5"
+                android:stepSize="1"
+                android:theme="@style/RatingBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/restaurantCardDetailsTvSates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension3"
+                android:drawableStart="@drawable/ic_true"
+                android:drawablePadding="@dimen/dimension2"
+                android:padding="@dimen/dimension2"
+                android:text="@string/open"
+                android:textColor="@color/colorGreenAccent3"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/restaurantCardDetailsTvMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension3"
+                android:text="@string/minimum"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/restaurantCardDetailsTvDeliveryFee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimension3"
+                android:text="@string/deliveryFee"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/restaurantCardDetails">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/restaurantCardDetailsVPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/restaurantCardDetailsTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fadeScrollbars="false"
+                android:layoutDirection="rtl"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                app:tabBackground="@drawable/tab_selection"
+                app:tabSelectedTextColor="@color/colorGreyLighten5">
+
+            </android.support.design.widget.TabLayout>
+        </android.support.v4.view.ViewPager>
+    </FrameLayout>
+</RelativeLayout>

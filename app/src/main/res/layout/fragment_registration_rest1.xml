@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.restaurant.RegistrationRest1Fragment">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/restRegistEditName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/loginUserTextView"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/restaurantName"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/restRegistEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/restRegistEditName"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimension5"
+                android:textAlignment="viewEnd"
+                android:textDirection="rtl" />
+
+
+            <RelativeLayout
+                android:id="@+id/Governorate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/restRegistEditEmail"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="@dimen/dimension5"
+
+                >
+
+                <Spinner
+                    android:id="@+id/loginUserSpinnerGovernorate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="viewEnd"
+                    android:textDirection="rtl" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/City"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/Governorate"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="@dimen/dimension5"
+
+                >
+
+                <Spinner
+                    android:id="@+id/loginUserSpinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="viewEnd"
+                    android:textDirection="rtl" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/restRegistEditPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/City"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/dimension5"
+                android:textAlignment="viewEnd"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/restRegistEditConfermationPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/restRegistEditPassword"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/confermationPassword"
+                android:inputType="textPassword"
+                android:padding="@dimen/dimension5"
+                android:textAlignment="viewEnd"
+                android:textDirection="rtl" />
+
+            <Button
+                android:id="@+id/restRegistBtnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restRegistEditConfermationPassword"
+                android:layout_margin="@dimen/dimension10"
+                android:layout_marginTop="@dimen/dimension12"
+                android:background="@drawable/round_corner_green"
+                android:text="@string/countuios"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

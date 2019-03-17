@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimension5"
+    tools:context=".ui.activity.restaurant.AddProductFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/restAddProductFgEditNameProduct"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/productName"
+                android:inputType="text"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/restAddProductFgEditDisc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/restAddProductFgEditNameProduct"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:gravity="start"
+                android:hint="@string/productDec"
+                android:inputType="text"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/restAddProductFgEditPrice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/restAddProductFgEditDisc"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/price"
+                android:inputType="number"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/restAddProductFgEditPreparingTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/restAddProductFgEditPrice"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/preparingTime"
+                android:inputType="time"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <LinearLayout
+                android:id="@+id/linearImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/restAddProductFgEditPreparingTime"
+                android:layout_margin="@dimen/dimension5"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension10"
+                    android:padding="@dimen/dimension2"
+                    android:text="صورة المنتج"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold" />
+
+                <ImageView
+                    android:id="@+id/restAddProductIvProduct"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dimension5"
+                    android:background="@color/grayE"
+                    android:padding="@dimen/dimension5"
+                    android:src="@drawable/image_loader" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/restAddProductBtnSaveProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearImage"
+                android:layout_margin="@dimen/dimension10"
+                android:layout_marginTop="@dimen/dimension12"
+                android:background="@drawable/round_corner_green"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.restaurant.RegistrationRest2Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimension5">
+
+            <RelativeLayout
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:padding="@dimen/dimension5">
+
+                <com.example.abdelrahmansaleh.sofra.helper.MultiSelectionSpinner
+                    android:id="@+id/SpinnerCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="viewEnd"
+                    android:textDirection="rtl" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/RegistrationRestEtMinimum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/category"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/minimum"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <EditText
+                android:id="@+id/RegistrationRestEtDeliveryFee"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/RegistrationRestEtMinimum"
+                android:layout_marginStart="@dimen/dimension5"
+                android:layout_marginTop="@dimen/dimension14"
+                android:layout_marginEnd="@dimen/dimension5"
+                android:background="@drawable/rounded_corner_white"
+                android:hint="@string/deliveryFee"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/dimension5"
+                android:textDirection="rtl" />
+
+            <TextView
+                android:id="@+id/textConnectionData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RegistrationRestEtDeliveryFee"
+                android:layout_margin="@dimen/dimension10"
+                android:text="@string/connection"
+                android:textSize="20sp"
+                android:textStyle="italic|bold" />
+
+            <LinearLayout
+                android:id="@+id/linerConnection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textConnectionData"
+                android:layout_margin="@dimen/dimension2">
+
+
+                <EditText
+                    android:id="@+id/RegistrationRestEtWhats"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/RegistrationRestEtMinimum"
+                    android:layout_marginStart="@dimen/dimension5"
+                    android:layout_marginTop="@dimen/dimension14"
+                    android:layout_marginEnd="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_white"
+                    android:gravity="end"
+                    android:hint="@string/whats"
+                    android:inputType="phone"
+                    android:padding="@dimen/dimension5" />
+
+                <EditText
+                    android:id="@+id/RegistrationRestEtPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="@dimen/dimension5"
+                    android:layout_marginTop="@dimen/dimension14"
+                    android:layout_marginEnd="@dimen/dimension5"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_white"
+                    android:gravity="end"
+                    android:hint="@string/phone"
+                    android:inputType="phone"
+                    android:padding="@dimen/dimension5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linerConnection"
+                android:layoutDirection="rtl">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimension10"
+                    android:padding="@dimen/dimension2"
+                    android:text="@string/imageShop"
+                    android:textSize="20sp"
+                    android:textStyle="italic|bold" />
+
+                <ImageView
+                    android:id="@+id/RegistrationRestIvRestaurant"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/dimension5"
+                    android:background="@color/grayE"
+                    android:padding="@dimen/dimension5"
+                    android:src="@drawable/image_loader" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/RegistrationRestBtnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearImage"
+                android:layout_margin="@dimen/dimension10"
+                android:layout_marginTop="@dimen/dimension12"
+                android:background="@drawable/round_corner_green"
+                android:text="@string/enter"
+                android:textColor="@color/white"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
